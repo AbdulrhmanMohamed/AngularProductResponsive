@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TodoComponent } from './component/todo/todo.component';
 import { FormaddComponent } from './component/formadd/formadd.component';
 import { AddedTodoComponent } from './component/added-todo/added-todo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AddedTodoComponent } from './component/added-todo/added-todo.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,15 @@
-<p>added-todo works!</p>
+<div class="alert bg-light alert-dismissible fade show overflow-hidden mt-3 py-2 d-flex align-items-center justify-content-between" role="alert" style="padding:5px 10px !important">
+
+    <h2 style="display: inline-block" [ngClass]="{checked:isChecked}">  {{addedData}}</h2>
+   
+    
+    <div class="button-wrapper">
+        <button class="btn btn-danger float-end">
+            <i class="fa-solid fa-trash fa-2x text-white" (click)='closeOnClick(addedData)'></i>
+        </button>
+        <button class="btn btn-success float-end mx-2">
+            <i class="fa-solid fa-2x" [class]="isChecked?checkClass:closeClass" (click)="checkOnClick()"></i>
+        </button>
+    </div>
+    
+  </div>
